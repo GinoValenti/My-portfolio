@@ -7,6 +7,7 @@ import Service from './components/Service';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import Project from './components/Project';
+import Skills from './components/Skills';
 function App() {
   return (
     <> 
@@ -22,8 +23,8 @@ function App() {
 
 
 <Service></Service>
-<Project></Project>
-<Contact></Contact>
+<Skills></Skills>
+<Project></Project><Contact></Contact>
 
 
 
