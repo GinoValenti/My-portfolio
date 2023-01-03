@@ -1,14 +1,25 @@
 import React from 'react'
 import foto from "../yo-gitii.png"
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // You can also use <link> for styles
+// ..
+AOS.init();
 function About(){
   return (
-    <section class="about" id="about">
-    <div class="heading">
+    <section   class="about" id="about">
+    <div   class="heading">
         <h2>About Me</h2>
         <span>Introduction</span>
     </div>
 
-    <div class="about-container">
+    <div  data-aos="fade-up"
+  
+    data-aos-delay="50"
+   
+    data-aos-easing="ease-in-out"
+    data-aos-mirror="true"
+    data-aos-once="false"
+    data-aos-anchor-placement="top-center" class="about-container">
         <div class="about-img">
             <img src={foto} alt=""/>
         </div>
@@ -27,7 +38,7 @@ function About(){
 
                 <div class="info-box">
                     <i class='bx bxs-envelope'> </i>
-                    <a className='mail' href="mailto:ginorvalenti@gmail.com"> ginorvalenti@gmail.com</a>
+                    <a className='mail maildark' href="mailto:ginorvalenti@gmail.com"> ginorvalenti@gmail.com</a>
                 </div>
                
              

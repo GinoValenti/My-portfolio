@@ -6,7 +6,7 @@ import About from './components/About';
 import Service from './components/Service';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
-import Project from './components/Project';
+import Project from './components/Project.jsx';
 import Skills from './components/Skills';
 function App() {
   return (
@@ -23,7 +23,7 @@ function App() {
 
 
 <Service></Service>
-<Skills></Skills>
+
 <Project></Project><Contact></Contact>
 
 

@@ -4,7 +4,7 @@ import mytini from "../tiny.jpg"
 import captura from "../Captura.PNG"
 function Project  ()  {
   return (
-    <section class="services" id="services">
+    <section class="services" id="projects">
     <div class="heading">
         <h2>Projects</h2>
         <span>My Projects</span>
