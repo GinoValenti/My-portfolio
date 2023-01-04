@@ -23,8 +23,9 @@ function App() {
 
 
 <Service></Service>
-
-<Project></Project><Contact></Contact>
+<Skills></Skills>
+<Project></Project>
+<Contact></Contact>
 
 
 

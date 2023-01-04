@@ -2,12 +2,16 @@ import React from 'react'
 import motorx from "../image.jpg"
 import mytini from "../tiny.jpg"
 import captura from "../Captura.PNG"
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // You can also use <link> for styles
+// ..
+AOS.init();
 function Project  ()  {
   return (
     <section class="services" id="projects">
     <div class="heading">
         <h2>Projects</h2>
-        <span>My Projects</span>
+        <span>Some of my projects</span>
     </div>
     <div class="services-content">
 
@@ -18,7 +22,10 @@ function Project  ()  {
 			<img src={motorx} alt="Picture by Nathan Dumlao" class="card__image"/>
 			<figcaption class="card__caption">
 				<h2 class="card__title">Motor X</h2>
-				<p class="card__snippet">Drinking more caffeine during the coronavirus lockdown? Here's how it can affect you over time and advice on making it better for you.</p>
+				<p class="card__snippet">Application dedicated to lovers of high-end vehicles, in it
+you can see all the available models, consult a budget
+and also buy brand merch.
+</p>
                 <div className='buttons'>
 
 <a target="_blank" href="https://motorx.vercel.app/" class="card__button">Page</a>
@@ -33,7 +40,10 @@ function Project  ()  {
 			<img src={mytini} alt="Picture by Nathan Dumlao" class="card__image"/>
 			<figcaption class="card__caption">
 				<h2 class="card__title">My tinerary</h2>
-				<p class="card__snippet">Drinking more caffeine during the coronavirus lockdown? Here's how it can affect you over time and advice on making it better for you.</p>
+				<p class="card__snippet">Application designed for travelers, in it you can find your
+ideal vacation, it has a section of hotels and cities where
+you can leave comments about your experience and
+reactions to different itineraries.</p>
                 <div className='buttons'>
 
 <a href="https://mytinerary-netrunners.vercel.app/" target="_blank" class="card__button">Page</a>
@@ -48,7 +58,9 @@ function Project  ()  {
 			<img src={captura} alt="Picture by Daniel Lincoln" class="card__image"/>
 			<figcaption class="card__caption">
 				<h2 class="card__title">PetShop Mindy</h2>
-				<p class="card__snippet">On Friday, offices around the country celebrated the 15th annual Take Your Dog to Work Day. Though the event's primary goal is to raise awareness for pet adoption, the unanticipated impact may be a slightly more relaxing work environment for any office choosing to participate.</p>
+				<p class="card__snippet">E-commerce application created for your best friend, in
+it you can find toys and remedies for pets
+</p>
                 <div className='buttons'>
 
                 <a href="https://petshop-mindy.netlify.app/" target="_blank" class="card__button">Page</a>
