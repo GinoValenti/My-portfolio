@@ -633,8 +633,8 @@ width: 60px;
   display: flex;
   margin-right: 2rem;
   padding: 10px;
-
 }
+
 .nav__link:hover {
     color: brown;
 }
@@ -651,15 +651,16 @@ width: 60px;
   transition: 0.3s ease-in;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 922px) {
   .nav__toggler {
     display: block;
     cursor: pointer;
     
   }
+  
   .nav__menu {
     position: fixed;
-    top: 7vh;
+    top: 8vh;
     right: 0;
     height: 93vh;
     width: 40vw;
@@ -667,6 +668,7 @@ width: 60px;
     flex-direction: column;
     transform: translateX(100%);
     transition: 0.5s ease-in;
+    gap: 1px
   }
 }
 
