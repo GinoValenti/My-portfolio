@@ -3,15 +3,17 @@ import motorx from "../image.jpg"
 import mytini from "../tiny.jpg"
 import captura from "../Captura.PNG"
 import AOS from 'aos';
+import {useTranslation} from "react-i18next"
 import 'aos/dist/aos.css'; // You can also use <link> for styles
 // ..
 AOS.init();
 function Project  ()  {
+	const [t,i18n]=useTranslation("global")
   return (
     <section class="services" id="projects">
     <div class="heading">
-        <h2>Projects</h2>
-        <span>Some of my projects</span>
+        <h2>{t("global.nav-projects")}</h2>
+        <span>{t("global.span-projects")}</span>
     </div>
     <div class="services-content">
 
@@ -22,9 +24,7 @@ function Project  ()  {
 			<img src={motorx} alt="Picture by Nathan Dumlao" class="card__image"/>
 			<figcaption class="card__caption">
 				<h2 class="card__title">Motor X</h2>
-				<p class="card__snippet">Application dedicated to lovers of high-end vehicles, in it
-you can see all the available models, consult a budget
-and also buy brand merch.
+				<p class="card__snippet">{t("global.card-motor")}
 </p>
                 <div className='buttons'>
 
@@ -40,10 +40,7 @@ and also buy brand merch.
 			<img src={mytini} alt="Picture by Nathan Dumlao" class="card__image"/>
 			<figcaption class="card__caption">
 				<h2 class="card__title">My tinerary</h2>
-				<p class="card__snippet">Application designed for travelers, in it you can find your
-ideal vacation, it has a section of hotels and cities where
-you can leave comments about your experience and
-reactions to different itineraries.</p>
+				<p class="card__snippet">{t("global.card-traver")}</p>
                 <div className='buttons'>
 
 <a href="https://mytinerary-netrunners.vercel.app/" target="_blank" class="card__button">Page</a>
@@ -58,8 +55,7 @@ reactions to different itineraries.</p>
 			<img src={captura} alt="Picture by Daniel Lincoln" class="card__image"/>
 			<figcaption class="card__caption">
 				<h2 class="card__title">PetShop Mindy</h2>
-				<p class="card__snippet">E-commerce application created for your best friend, in
-it you can find toys and remedies for pets
+				<p class="card__snippet">{t("global.card-pet")}
 </p>
                 <div className='buttons'>
 

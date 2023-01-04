@@ -1,0 +1,30 @@
+{
+    "global":{
+        "Hello, I'm":"Hola soy",
+        "who":"A quien le encanta crear aplicaciones web estéticas y funcionales.",
+        "download":"Descargar CV",
+        "nav-services":"Servicios",
+        "nav-projects":"Projectos",
+        "nav-contact":"Contacto",
+        "nav-about":"Sobre Mi",
+        "about":"¡Hola! Soy un 𝗙𝘂𝗹𝗹 𝘀𝘁𝗮𝗰𝗸 𝗠𝗘𝗥𝗡 Desarrollador de MindHub👨🏻‍💻 al que le encanta crear aplicaciones web estéticas y funcionales. Soy un profesional altamente motivado al que le encanta trabajar en entornos desafiantes que me permitan crecer y mejorar mis habilidades. Tengo más de 800 horas en un entorno de trabajo real simulado para realizar algunos proyectos que podéis ver en mi GitHub. Me apasiona la resolución de problemas, el diseño, el trabajo en equipo y el aprendizaje constante. Con todos mis conocimientos estoy seguro que puedo aportar grandes ideas y soluciones. Tendrás lo mejor de mí trabajando en proyectos exigentes, implementando AGILE.",
+        "tittle-about":"Sobre Mi",
+        "my":"Mis Servicios",
+        "web":"Desarrollo web",
+        "back":"Desarrollo Backend",
+        "app":"Desarrollo Mobile",
+        "seo":"Posicionamiento SEO",
+        "data":"Base de datos",
+        "tech":"Tecnologias",
+        "span-tech":"Tecnologias que utilizo",
+        "span-projects":"Algunos de mis projectos",
+        "contact-span":"Contactar conmigo",
+        "footer":"¡Ponerse en contacto!",
+        "name":"Nombre",
+        "message":"Mensaje",
+        "valor":"¡Hola! ¿Como estas? Estoy interesado en trabajar contigo. ¡Hablemos!",
+        "card-motor":"Aplicación E-commerce dedicada a los amantes de los vehículos de alta gama, en ella podrás ver todos los modelos disponibles, consultar presupuesto y además comprar merch de la marca.",
+        "card-traver":"Aplicación diseñada para viajeros, en ella podrás encontrar tus vacaciones ideales, cuenta con una sección de hoteles y ciudades donde puedes dejar comentarios sobre tu experiencia y reacciones",
+        "card-pet":"Aplicación creada para tu mejor amigo, en ella podrás encontrar juguetes y remedios para mascotas"
+    }
+}

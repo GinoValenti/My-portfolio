@@ -1,0 +1,30 @@
+{
+    "global":{
+        "Hello, I'm":"Hello, I'm",
+        "who":"Who loves to create aesthetic and functional web applications.",
+        "download":"Download CV",
+        "nav-services":"Services",
+        "nav-projects":"Projects",
+        "nav-contact":"Contact",
+        "nav-about":"About",
+        "about":"Hello! I'm a 𝗙𝘂𝗹𝗹 𝘀𝘁𝗮𝗰𝗸 𝗠𝗘𝗥𝗡 Developer from MindHub👨🏻‍💻 who loves to create aesthetic and functional web applications. I am a highly motivated professional who loves to work in challenging environments that allow me to grow and improve my skills. I have more than 800 hours in a simulated real work environment in which to carry out some projects that you can see on my GitHub. I am passionate about solving problems, design, teamwork and constantly learning. With all my knowledge I am sure that I can contribute great ideas and solutions. You will have the best of me working on demanding projects, implementing AGILE.",
+        "tittle-about":"About Me",
+        "my":"My Services",
+        "web":"Web Development",
+        "back":"Backend Development",
+        "app":"App Development",
+        "seo":"SEO positioning",
+        "data":"Database",
+        "tech":"Technologies",
+        "span-tech":"Technologies that I've been working on:",
+        "span-projects":"Some of my projects",
+        "contact-span":"Connect With me",
+        "footer":"Get in touch!",
+        "name":"Name",
+        "message":"Message",
+        "valor":"Hey There! How are you doing? I'm interested in working with you. Let's talk!",
+        "card-motor":"Application dedicated to lovers of high-end vehicles, in it you can see all the available models, consult a budget and also buy brand merch.",
+        "card-traver":"Application designed for travelers, in it you can find your ideal vacation, it has a section of hotels and cities where you can leave comments about your experience and reactions",
+        "card-pet":"E-commerce application created for your best friend, in it you can find toys and remedies for pets"
+    }
+}

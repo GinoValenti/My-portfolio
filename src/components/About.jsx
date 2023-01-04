@@ -4,14 +4,16 @@ import AOS from 'aos';
 import phone from "../assets/ring-phone.png"
 import linke from "../assets/linkedin.png"
 import email from "../assets/email.png"
+import {useTranslation} from "react-i18next"
 import 'aos/dist/aos.css'; // You can also use <link> for styles
 // ..
 AOS.init();
 function About(){
+    const [t,i18n]=useTranslation("global")
   return (
     <section   class="about" id="about">
     <div   class="heading">
-        <h2>About Me</h2>
+        <h2>{t("global.tittle-about")}</h2>
         <span>Introduction</span>
     </div>
 
@@ -27,8 +29,7 @@ function About(){
             <img src={foto} alt=""/>
         </div>
         <div class="about-text">
-            <p>Hello! I'm a 𝗙𝘂𝗹𝗹 𝘀𝘁𝗮𝗰𝗸 𝗠𝗘𝗥𝗡 Developer from MindHub👨🏻‍💻 who loves to create aesthetic and functional web applications. I am a highly motivated professional who loves to work in challenging environments that allow me to grow and improve my skills. I have more than 800 hours in a simulated real work environment in which to carry out some projects that you can see on my GitHub.
-I am passionate about solving problems, design, teamwork and constantly learning. With all my knowledge I am sure that I can contribute great ideas and solutions. You will have the best of me working on demanding projects, implementing AGILE.</p>
+            <p>{t("global.about")}</p>
             <div class="information">
                 <div class="info-box">
                <img src={linke} alt="" />

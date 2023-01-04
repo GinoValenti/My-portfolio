@@ -617,7 +617,24 @@ margin: 0;
     margin-right: 2rem;
     transition: 200ms ease-in-out;
 }
+.button-lenguage{
 
+  transition: 200ms ease-in-out;
+background-color: transparent;
+ 
+border: 1px solid rgba(255, 255, 255, 0.392);
+color: rgb(207, 207, 207);
+width: 60px;
+}
+.button-lenguage:hover{
+  background-color: #000;
+}
+.lenguage-container{
+  display: flex;
+  margin-right: 2rem;
+  padding: 10px;
+
+}
 .nav__link:hover {
     color: brown;
 }

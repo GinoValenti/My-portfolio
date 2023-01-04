@@ -3,6 +3,7 @@ import emailjs from '@emailjs/browser';
 import Swal from 'sweetalert2'
 import Modal from '@mui/material/Modal';
 import Box from '@mui/material/Box';
+import {useTranslation} from "react-i18next"
 import Loading from '../components/Loading/Loading'
 const style = {
   position: 'absolute',
@@ -13,6 +14,7 @@ const style = {
   p: 4,
 };
 function Contact () {
+  const [t,i18n]=useTranslation("global")
   const [name, setName] = useState('')
   const [email, setEmail] = useState('')
   const [message, setMessage] = useState("Hey There! How are you doing? I'm interested in working with you. Let's talk!")
@@ -60,16 +62,16 @@ setEmail("")
               }
     <section class="contact" id="contact">
         <div class="heading">
-        <h2>Contact</h2>
-        <span>Connect With Me</span>
+        <h2>{t("global.nav-contact")}</h2>
+        <span>{t("global.contact-span")}</span>
     </div>
     <div class="contact-form">
     <form id='contact' ref={form} onSubmit={sendEmail}>
-      <label for="from_name">Name</label>
+      <label for="from_name">{t("global.name")}</label>
       <input value={name} onChange={(e)=> setName(e.target.value)} type="text" name="from_name" />
       <label for="email_id">Email</label>
       <input value={email} onChange={(e)=> setEmail(e.target.value)} type="email" name="email_id" />
-      <label for="message">Message</label>
+      <label for="message">{t("global.message")}</label>
       <textarea value={message} onChange={(e)=> setMessage(e.target.value)} cols="30" rows="10" placeholder="Write Message Here..." name="message" />
       <input class="contact-button" type="submit" value="Send" />
     </form>

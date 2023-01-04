@@ -1,9 +1,10 @@
 import React from 'react'
 import { ImLinkedin ,ImEmbed2} from "react-icons/im";
 import "../App.css"
-
+import {useTranslation} from "react-i18next"
 import cv from "../assets/Gino-Valenti.pdf"
  function Home() {
+    const [t,i18n]=useTranslation("global")
   return (
     <div class="home" id="home">
     <div class="social">
@@ -13,11 +14,11 @@ import cv from "../assets/Gino-Valenti.pdf"
         <img src="main.png" alt=""/>
     </div>
     <div class="home-text">
-        <span>Hello, I'm</span>
+        <span>{t("global.Hello, I'm")}</span>
         <h1>Gino</h1>
         <h2>Frontend Developer</h2>
-       <p>Who loves to create aesthetic and functional web applications. </p>
-        <a download="CV-Gino-Valenti" href={cv} class="btn">Download CV</a>
+       <p>{t("global.who")}</p>
+        <a download="CV-Gino-Valenti" href={cv} class="btn">{t("global.download")}</a>
     </div>
 </div>
   )

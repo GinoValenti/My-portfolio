@@ -1,9 +1,11 @@
 import React from 'react'
 import "../App.css"
 import { useState } from 'react';
+import { useTranslation } from 'react-i18next';
+
 import {NavLink} from 'react-router-dom'
 function Nav() {
- 
+  const [t,i18n]=useTranslation("global")
   // Dark Mode / light mode
   const [active, setActive] = useState("nav__menu");
   const [icon, setIcon] = useState("nav__toggler");
@@ -36,11 +38,15 @@ function Nav() {
           Home
         </a>
       </li>
-      <li className="nav__item"><a href="#about" className="nav__link">About</a></li>
-        <li className="nav__item"><a href="#services" className="nav__link">Services</a></li>
-        <li className="nav__item"><a href="#projects" className="nav__link">Projects</a></li>
-        <li className="nav__item"><a href="#contact" className="nav__link">Contact</a></li>
-     
+      <li className="nav__item"><a href="#about" className="nav__link">{t("global.nav-about")}</a></li>
+        <li className="nav__item"><a href="#services" className="nav__link">{t("global.nav-services")}</a></li>
+        <li className="nav__item"><a href="#projects" className="nav__link">{t("global.nav-projects")}</a></li>
+        <li className="nav__item"><a href="#contact" className="nav__link">{t("global.nav-contact")}</a></li>
+        <div className='lenguage-container'>
+
+        <li className="nav__item"><button  className="button-lenguage" onClick={()=>i18n.changeLanguage("es")}>ES</button></li>
+        <li className="nav__item"><button  className="button-lenguage" onClick={()=>i18n.changeLanguage("en")}>EN</button></li>
+        </div>
       
 
   
