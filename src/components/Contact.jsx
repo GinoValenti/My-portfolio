@@ -1,6 +1,17 @@
 import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 import Swal from 'sweetalert2'
+import Modal from '@mui/material/Modal';
+import Box from '@mui/material/Box';
+import Loading from '../components/Loading/Loading'
+const style = {
+  position: 'absolute',
+  top: '50%',
+  left: '50%',
+  transform: 'translate(-50%, -50%)',
+  width: 100,
+  p: 4,
+};
 function Contact () {
   const [name, setName] = useState('')
   const [email, setEmail] = useState('')
@@ -8,14 +19,17 @@ function Contact () {
   console.log(name);
   const form = useRef();
 
+  const [show, setShow] = useState(false);
   const sendEmail = (e) => {
+    setShow(true)
     e.preventDefault();
 
     
     emailjs.sendForm('service_7qihqgg', 'template_q0e67hq', form.current, 'oGJNR-GvxvXoNBIAL')
-      .then((result) => {
+    .then((result) => {
+        setShow(false)
 
-          Swal.fire("Gracias! Me contactare contigo pronto")
+          Swal.fire("Thanks! I will contact you soon")
          
 setEmail("")
         setName("")
@@ -27,7 +41,23 @@ setEmail("")
 
       });
   };
+  const handleClose = () => setShow(false);
   return (
+    <>
+{
+                show ? 
+                <Modal
+                open={show}
+                onClose={handleClose}
+                aria-labelledby="modal-modal-title"
+                aria-describedby="modal-modal-description"
+              >
+                <Box sx={style}>
+                  <Loading/>
+                </Box>
+              </Modal>
+                 : <></>
+              }
     <section class="contact" id="contact">
         <div class="heading">
         <h2>Contact</h2>
@@ -45,7 +75,7 @@ setEmail("")
     </form>
     </div>
        </section>
-
+</>
   )
 }
 export default Contact
