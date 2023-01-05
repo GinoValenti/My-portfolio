@@ -16,7 +16,7 @@ import cv from "../assets/Gino-Valenti.pdf"
     <div class="home-text">
         <span>{t("global.Hello, I'm")}</span>
         <h1>Gino</h1>
-        <h2>Frontend Developer</h2>
+        <h2>Full Stack Developer</h2>
        <p>{t("global.who")}</p>
         <a download="CV-Gino-Valenti" href={cv} class="btn">{t("global.download")}</a>
     </div>
