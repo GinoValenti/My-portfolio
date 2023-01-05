@@ -55,6 +55,7 @@ function Skills () {
       <SwiperSlide><img src={Mongo} alt="" /></SwiperSlide>
       <SwiperSlide><img src={Redux} alt="" /></SwiperSlide>
     </Swiper>
+   
     </div>
   </>
   )
