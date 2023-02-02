@@ -23,6 +23,7 @@
         "name":"Name",
         "message":"Message",
         "valor":"Hey There! How are you doing? I'm interested in working with you. Let's talk!",
+        "card-amazing":"Events application, made only with JavaScript HTML and CSS. It has filtering by checkbox and writing, as well as a detail page.",
         "card-motor":"Application dedicated to lovers of high-end vehicles, in it you can see all the available models, consult a budget and also buy brand merch.",
         "card-traver":"Application designed for travelers, in it you can find your ideal vacation, it has a section of hotels and cities where you can leave comments about your experience and reactions",
         "card-pet":"E-commerce application created for your best friend, in it you can find toys and remedies for pets"

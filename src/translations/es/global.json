@@ -23,6 +23,7 @@
         "name":"Nombre",
         "message":"Mensaje",
         "valor":"¡Hola! ¿Como estas? Estoy interesado en trabajar contigo. ¡Hablemos!",
+        "card-amazing":"Aplicacion de eventos, realizada unicamente con JavaScript HTML y CSS. Cuenta con filtrado por checkbox y escrito, ademas de pagina de detalle.",
         "card-motor":"Aplicación E-commerce dedicada a los amantes de los vehículos de alta gama, en ella podrás ver todos los modelos disponibles, consultar presupuesto y además comprar merch de la marca.",
         "card-traver":"Aplicación diseñada para viajeros, en ella podrás encontrar tus vacaciones ideales, cuenta con una sección de hoteles y ciudades donde puedes dejar comentarios sobre tu experiencia y reacciones",
         "card-pet":"Aplicación creada para tu mejor amigo, en ella podrás encontrar juguetes y remedios para mascotas"

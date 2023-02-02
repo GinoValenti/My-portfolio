@@ -65,6 +65,21 @@ function Project  ()  {
 			</figcaption>
 		</figure>
 	</div>
+	<div class="card">
+		<figure class="card__thumb">
+			<img src="https://www.commercialriskeurope.com/wp-content/uploads/2021/10/images2823-6156b45255132.jpg" alt="Picture by Nathan Dumlao" class="card__image"/>
+			<figcaption class="card__caption">
+				<h2 class="card__title">Amazing Events</h2>
+				<p class="card__snippet">{t("global.card-amazing")}
+</p>
+                <div className='buttons'>
+
+<a target="_blank" href="https://ginovalenti.github.io/amazing-events/" class="card__button">Page</a>
+<a target="_blank" href="https://github.com/GinoValenti/amazing-events" class="card__button">Code</a>
+</div>
+			</figcaption>
+		</figure>
+	</div>
 </div>
 
 
