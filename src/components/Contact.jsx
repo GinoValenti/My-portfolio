@@ -22,26 +22,31 @@ function Contact () {
   const form = useRef();
 
   const [show, setShow] = useState(false);
+
   const sendEmail = (e) => {
-    setShow(true)
-    e.preventDefault();
 
-    
-    emailjs.sendForm('service_7qihqgg', 'template_q0e67hq', form.current, 'oGJNR-GvxvXoNBIAL')
-    .then((result) => {
-        setShow(false)
+      setShow(true)
+      e.preventDefault();
+  
+      
+      emailjs.sendForm('service_7qihqgg', 'template_q0e67hq', form.current, 'oGJNR-GvxvXoNBIAL')
+      .then((result) => {
+          setShow(false)
+          if(email.length || name.length || message.length  == 0){Swal.fire({text:"Please complete all fields",icon: 'error',}) }else{
 
-          Swal.fire("Thanks! I will contact you soon")
+            Swal.fire("Thanks! I will contact you soon")
+          }
+           
+          setEmail("")
+          setName("")
+          
+      
+        }, (error) => {
          
-setEmail("")
-        setName("")
-        setMessage("")
+            Swal.fire("?")
+  
+        });
     
-      }, (error) => {
-       
-          Swal.fire("?")
-
-      });
   };
   const handleClose = () => setShow(false);
   return (
