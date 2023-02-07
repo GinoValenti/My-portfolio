@@ -59,7 +59,7 @@ function Project  ()  {
 </p>
                 <div className='buttons'>
 
-                <a href="https://petshop-mindy.netlify.app/" target="_blank" class="card__button">Page</a>
+                <a href="https://ginovalenti.github.io/Pet-Shop-Mindy/" target="_blank" class="card__button">Page</a>
                 <a target="_blank" href="https://github.com/GinoValenti/Pet-Shop-Mindy" class="card__button">Code</a>
                 </div>
 			</figcaption>
