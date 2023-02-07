@@ -32,7 +32,7 @@ function Contact () {
       emailjs.sendForm('service_7qihqgg', 'template_q0e67hq', form.current, 'oGJNR-GvxvXoNBIAL')
       .then((result) => {
           setShow(false)
-          if(email.length || name.length || message.length  == 0){Swal.fire({text:"Please complete all fields",icon: 'error',}) }else{
+          if(email.length || name.length   == 0){Swal.fire({text:"Please complete all fields",icon: 'error',}) }else{
 
             Swal.fire("Thanks! I will contact you soon")
           }
